@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- form -->
+    <!-- GET: Busqueda, Navegacion---info no necesita que sea privada -->
+    <!-- POST: Enviar usuarios, Contraseñas, etc. -->
+    <h1>Formulario de Registro</h1>
+    <form action="Registrar.php" method="GET">
+
+        <fieldset>
+            <legend>Datos Basicos</legend>
+            <label for="">Ingrese sus Nombres</label>
+            <input type="text" name="nombres" id="nombres" placeholder="ingrese su(s) nombre(s)..." size="40" maxlength="50">
+            <label for="">Ingrese sus Apellidos</label>
+            <input type="text" name="nombres" id="nombres" placeholder="ingrese su(s) apellido(s)..." size="40" maxlength="50">
+            <label for="">Correo Electronico</label>
+            <input type="text" name="nombres" id="nombres" placeholder="ingrese sucorreo Electronico..." size="40" maxlength="50">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos mantenimientos</legend>
+            <label for="">Observaciones</label>
+            <textarea name="observciones" id="observaciones" cols="30" rows="10" maxlength="200" placeholder="max. 200 caracteres"></textarea>
+            <!-- checkbox -->
+            <label for="">Revision Rutinaria</label>
+            <label for=""><input type="checkbox" name="revision" id="revision" value="cambioAceite">Cambio de Aceite</label>
+            <label for=""><input type="checkbox" name="cadena" id="cadena" value="cadena">Revision de Cadena</label>
+            <label for=""><input type="checkbox" name="frenos" id="frenos" value="frenos">frenos</label>
+            <!-- Radio -->
+            <label for="">Cilindraje</label>
+            <label for=""><input type="radio" name="cilindraje" id="cilindraje" value="Hasta100">Hasta 100 C.C.</label>
+            <label for=""><input type="radio" name="cilindraje" id="cilindraje" value="De100a200">De 100 C.C. a 200 C.C.</label>
+            <label for=""><input type="radio" name="cilindraje" id="cilindraje" value="Masde200">Mas de 200 C.C.</cilindraje>
+            <!-- Select -->
+            <label for="">Marca</label>
+            <select name="marca" id="marca">
+                <option value="yamaha"><label>yamaha</label></option>
+                <option value="auteco"><label>auteco</label></option>
+                <option value="suzuki"><label>suzuki</label></option>
+                <option value="kawasaki"><label>kawasaki</label></option>
+            </select>
+        </fieldset>
+        <br><br>
+        <!-- Boton -->
+        <input type="image" src="img/enviarFormulario.png" alt="Enviar" width="200" height="40">
+    </form>
+</body>
+</html>
